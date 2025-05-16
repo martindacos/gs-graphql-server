@@ -6,7 +6,7 @@ import org.springframework.boot.test.autoconfigure.graphql.GraphQlTest;
 import org.springframework.graphql.test.tester.GraphQlTester;
 
 @GraphQlTest(BookController.class)
-public class BookControllerTests {
+class BookControllerTests {
 
     @Autowired
     private GraphQlTester graphQlTester;
@@ -25,7 +25,8 @@ public class BookControllerTests {
                         "pageCount": 416,
                         "author": {
                           "firstName": "Joshua",
-                          "lastName": "Bloch"
+                          "lastName": "Bloch",
+                          "birthDate": "1948-12-20"
                         }
                     }
                 """);
